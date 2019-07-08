@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .demo{
+            width:100px;
+            height:100px;
+            color:#fff;
+            background:#000;
+        }
+    </style>
+    <script src="js/main.js"></script>
+<!--    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>-->
+</head>
+<body>
+<!--    <div class="demo"></div>-->
+    <div class="demo">222</div>
+<!--    <div class="text">111</div>-->
+    <ul class="text">
+        <li>4444</li>
+        <li>3333</li>
+        <li>2222</li>
+        <li>111</li>
+    </ul>
+<ul class="demo">
+    <li></li>
+    <li></li>
+</ul>
+
+<ul class="brother">
+    <li ></li>
+    <li class="brother1"></li>
+    <li></li>
+    <li></li>
+</ul>
+</body>
+<script>
+    // let demo = $(".demo");
+    // console.log(demo);
+    // console.log(demo.eq(3));
+    // console.log(demo.size());
+    // console.log($(".text").html());
+
+    // console.log($(".text li").eq(0).html());
+
+    // console.log($(".text li").eq(2).html());
+    // console.log($);
+
+    // console.log($(".text li").eq(0).addClass('active'))
+    // console.log($(".demo").html())
+/*
+    console.log($(".demo").on("click",function () {
+        if (event.target.nodeName !== "DIV"){
+            console.log(event.target.nodeName);
+            return false;
+        }
+        alert(111);
+    }));*/
+
+/*    console.log($(".demo").eq(0).hide())
+    $(".demo").eq(1).on("click",function () {
+        $(".demo").eq(0).show();
+    })*/
+
+    // console.log($(".brother1").next().addClass("active"));
+
+    console.log($(".demo").eq(0).hide(1000));
+    $(".brother").on("click",function () {
+        console.log($(this));
+    })
+
+</script>
+</html>
